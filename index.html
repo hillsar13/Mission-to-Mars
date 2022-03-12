@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mission to Mars</title>
-    <link
-      rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   </head>
   <body>
-
     <div class="container">
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center">
-        <em><h1><Mission to Mars</h1>/<em>
+        <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-warning btn-lg " href="/scrape" role="button">Scrape New Data Here!</a></p> 
       </div>
       <!-- Add section for Mars News -->
       <div class="row" id="mars-news">
@@ -42,7 +39,7 @@
         </div>
         <div class="col-md-4">
           <!-- Mars Facts -->
-          <div class="row" id="mars-facts">
+          <div class="row p-3 mb-2 bg-primary text-white" id="mars-facts">
             <strong><h4>Mars Facts</h4></strong>
             {{ mars.facts | safe }}
           </div>
